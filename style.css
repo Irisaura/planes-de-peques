@@ -1,0 +1,21 @@
+#contenedor{
+
+    display:flex;
+
+}
+.elemento{
+    height: 100px;
+    width: 100px;
+}
+#uno{
+background-color: brown;
+margin: auto;
+}
+#dos{
+background-color: rgb(42, 91, 165);
+margin: auto;
+}
+#tres{
+background-color: rgb(42, 165, 153);
+margin: auto;
+}
