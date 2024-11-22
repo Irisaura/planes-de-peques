@@ -1,21 +1,368 @@
-#contenedor{
+ /* *{
+    margin: 0;
+    padding: 0%;
+ } esto sirve para cambiar toda mi pagina  llammado selector general*/
 
-    display:flex;
 
-}
-.elemento{
+ #container {
+    background: #41033e url(1.png) norepeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+ }
+ .copoNieve{
+   position: absolute;
+   top: -50px;
+   width: 40px;
+   height: 40px;
+   background-image: url("vecteezy_frost-ice-texture-snowflake-sticker-design_14207844.png");
+   background-size: 100%;
+   animation: fall linear infinite;
+ }
+ @keyframes fall {
+   from{
+transform: translateX(1hv);
+   }
+   to {
+      transform: translateY(1500vh);
+
+   }
+ }
+   
+
+ @-webkit-keyframes nieve {
+    from {
+       top: -10px;
+    }
+
+    to {
+       top: 2000px;
+    }
+ }
+
+ @-webkit-keyframes copos {
+    0% {
+       -webkit-transform: rotate(1deg) translate(0px, 0px);
+    }
+
+    100% {
+       -webkit-transform: rotate(1deg) translate(1px, 75px);
+    }
+ }
+
+ #snow div {
+    position: absolute;
+    top: -40px;
+    -webkit-animation-name: nieve, copos;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;
+ }
+
+ .copos {
+    color: #4a6fe9;
+    font-size: 1em;
+    position: absolute;
+ }
+
+ .copos.f1 {
+    left: 25px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f2 {
+    font-size: 1.8em;
+    left: 50px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f3 {
+    font-size: 3em;
+    left: 100px;
+    -webkit-animation-duration: 8s;
+ }
+
+ .copos.f4 {
+    font-size: 2.5em;
+    left: 150px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f5 {
+    font-size: 2.5em;
+    left: 175px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f6 {
+    font-size: 2.5em;
+    left: 200px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f7 {
+    font-size: 2.5em;
+    left: 300px;
+    -webkit-animation-duration: 8s;
+ }
+
+ .copos.f8 {
+    font-size: 3.5em;
+    left: 325px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f9 {
+    font-size: 1.5em;
+    left: 375px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f10 {
+    font-size: 1.5em;
+    left: 420px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f11 {
+    font-size: 3em;
+    left: 460px;
+    -webkit-animation-duration: 8s;
+ }
+
+ .copos.f12 {
+    font-size: 3em;
+    left: 525px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f13 {
+    font-size: 2em;
+    left: 580px;
+    -webkit-animation-duration: 5s;
+
+
+ }
+
+ .copos.f14 {
+    left: 610px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f15 {
+    font-size: 1.8em;
+    left: 650px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f16 {
+    font-size: 3em;
+    left: 700px;
+    -webkit-animation-duration: 8s;
+ }
+
+ .copos.f17 {
+    font-size: 2.5em;
+    left: 730px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f18 {
+    font-size: 2.5em;
+    left: 790px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f19 {
+    font-size: 2.5em;
+    left: 800px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f20 {
+    font-size: 2.5em;
+    left: 799px;
+    -webkit-animation-duration: 8s;
+ }
+
+ .copos.f17 {
+    font-size: 2.5em;
+    left: 760px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f18 {
+    font-size: 2.5em;
+    left: 95px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f19 {
+    font-size: 2.5em;
+    left: 720px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f17 {
+    font-size: 2.5em;
+    left: 680px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f18 {
+    font-size: 2.5em;
+    left: 450px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f19 {
+    font-size: 2.5em;
+    left: 820px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f20 {
+    font-size: 2.5em;
+    left: 850px;
+    -webkit-animation-duration: 7s;
+ }
+
+ .copos.f21 {
+    font-size: 2.5em;
+    left: 280px;
+    -webkit-animation-duration: 6s;
+ }
+
+ .copos.f22 {
+    font-size: 2.5em;
+    left: 900px;
+    -webkit-animation-duration: 5s;
+ }
+
+ .copos.f23 {
+    font-size: 2.5em;
+    left: 950px;
+    -webkit-animation-duration: 7s;
+ }
+
+
+ #contenedor {
+
+    display: flex;
+    border: 5px dotted rgb(195, 195, 245);
+    margin: auto;
+ }
+
+ #inicio {
+    animation: latido 2s infinite;
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    left: 85%;
+    border-radius: 50%;
+ }
+
+
+ @keyframes latido {
+    0% {
+       transform: scale(1) rotate(-45deg);
+
+    }
+
+    20% {
+       transform: scale(1.25) rotate(-45deg);
+
+    }
+
+    40% {
+       transform: scale(1.50) rotate (-45deg);
+
+    }
+ }
+
+
+ .elemento {
     height: 100px;
     width: 100px;
-}
-#uno{
-background-color: brown;
-margin: auto;
-}
-#dos{
-background-color: rgb(42, 91, 165);
-margin: auto;
-}
-#tres{
-background-color: rgb(42, 165, 153);
-margin: auto;
-}
+    margin: 50px;
+    border-radius: 20px;
+    border: 20px dotted rgb(0, 195, 255);
+    padding: 20px;
+    text-align: center;
+
+ }
+
+ #uno {
+    background-color: rgb(125, 177, 232);
+    margin: auto;
+ }
+
+ #dos {
+    background-color: rgb(114, 159, 228);
+    margin: auto;
+    border-radius: 100%;
+ }
+
+ #dos:hover {
+    background-color: rgb(243, 254, 22);
+
+ }
+
+
+ #tres {
+    background-color: rgb(42, 165, 153);
+    margin: auto;
+ }
+
+ #contenedores a {
+    text-decoration: uppercase;
+    text-decoration-color: bluey color(srgb red green blue 50px);
+    margin: flex;
+
+ }
+
+ nav {
+
+    background: linear-gradient(-45deg, rgb(187, 0, 255), #2cccc9, rgb(141, 33, 187));
+    padding: 15px;
+ }
+
+ nav ul {
+    display: flex;
+    list-style-type: none;
+
+ }
+
+
+ nav ul li {
+    margin: auto;
+    text-transform: uppercase;
+    background-color: rgb(213, 124, 231);
+    padding: 10px;
+    border-radius: 7%;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+ }
+
+ nav ul li:hover {
+    background-color: rgb(233, 15, 117);
+ }
+
+ .submenu li:hover {
+    background: linear-gradient(45deg)rgb(229, 8, 211) rgb(0, 225, 255)
+ }
+
+ .submenu {
+    display: none;
+ }
+
+ .submenu a {
+    text-decoration: none;
+ }
+
+ nav ul li:hover ul {
+    display: block;
+
+ }
